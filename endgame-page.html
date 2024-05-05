@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flaps and Seals - Subterfuge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flaps and Seals</h1>
+        <p>Enter your guesses for the contents of the codebook:</p>
+        <form id="guessForm">
+            <div id="guessInputsContainer">
+                <!-- Guess inputs will be added here dynamically -->
+            </div>
+            <button type="submit">Open Dossier</button>
+        </form>
+        <div id="results" style="display:none;">
+            <h2>Results</h2>
+            <p>Team Points: <span id="team-points">0</span></p>
+            <p>Codebook: <ul id="codebook-list"></ul></p>
+        </div>
+    </div>
+    <script src="endgame-page.js"></script>
+</body>
+</html>

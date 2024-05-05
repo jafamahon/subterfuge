@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Configuration - Subterfuge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Configuration</h1>
+        <form id="gameConfigForm">
+            <div class="form-group">
+                <label for="numPlayers">Number of Players:</label>
+                <input type="number" id="numPlayers" name="numPlayers" min="2" required>
+            </div>
+            <div class="form-group">
+                <label for="gameLength">Game Length (hours):</label>
+                <input type="number" id="gameLength" name="gameLength" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="codeBreakTime">Code Break Time (hour of the game):</label>
+                <input type="number" id="codeBreakTime" name="codeBreakTime" min="0" required>
+            </div>
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
+    <script src="game-configuration.js"></script>
+</body>
+</html>
